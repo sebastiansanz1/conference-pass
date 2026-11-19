@@ -143,12 +143,9 @@ El panel administrativo requiere autenticación y validación del rol del usuari
 
 ##  Equipo de desarrollo
 
-Proyecto desarrollado en equipo por:
-
-- Arath
+Proyecto desarrollado por:
 - Sebastián
-- Kevin
-- Diego
+
 
 ##  Objetivo del proyecto
 
