@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi boleto | Conference Pass</title>
+    <link rel="stylesheet" href="/css/boleto.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">CONFERENCE<span>PASS</span></a>
+    </header>
+
+    <main class="container">
+
+        <div class="success-message">
+            <div class="success-icon">✓</div>
+            <h1>¡Tu lugar está asegurado!</h1>
+            <p>Tu reservación se realizó correctamente.</p>
+        </div>
+
+        <section class="ticket">
+
+            <div class="ticket-main">
+                <span class="ticket-label">BOLETO OFICIAL</span>
+
+                <h2>EL FUTURO ES AHORA</h2>
+
+                <p class="theme">
+                    Inteligencia Artificial e Innovación Tecnológica
+                </p>
+
+                <div class="ticket-divider"></div>
+
+                <div class="ticket-details">
+                    <div>
+                        <span>ASISTENTE</span>
+                        <strong id="attendeeName">Cargando...</strong>
+                    </div>
+
+                    <div>
+                        <span>PONENTE</span>
+                        <strong id="speaker">Cargando...</strong>
+                    </div>
+
+                    <div>
+                        <span>FECHA</span>
+                        <strong id="eventDate">Cargando...</strong>
+                    </div>
+
+                    <div>
+                        <span>HORA</span>
+                        <strong id="eventTime">Cargando...</strong>
+                    </div>
+
+                    <div>
+                        <span>UBICACIÓN</span>
+                        <strong id="eventPlace">Cargando...</strong>
+                    </div>
+
+                    <div>
+                        <span>ASIENTO</span>
+                        <strong id="seatNumber">---</strong>
+                    </div>
+                </div>
+
+                <div class="folio-container">
+                    <span>FOLIO DE RESERVACIÓN</span>
+                    <strong id="ticketFolio">Cargando...</strong>
+                </div>
+            </div>
+
+            <div class="ticket-qr">
+                <h3>ACCESO AL EVENTO</h3>
+
+                <div class="qr-container">
+                    <img id="qrCode" alt="Código QR de acceso">
+                </div>
+
+                <p>Presenta este código QR en la entrada.</p>
+
+                <span class="qr-status">BOLETO CONFIRMADO</span>
+            </div>
+
+        </section>
+
+        <p id="ticketMessage" class="message">
+            Generando tu boleto...
+        </p>
+
+        <button id="printButton" class="print-button" disabled>
+            Descargar / Imprimir boleto
+        </button>
+
+        <a href="index.html" class="back-link">Volver al inicio</a>
+
+    </main>
+
+    <script type="module" src="/js/boleto.js"></script>
+</body>
+</html>

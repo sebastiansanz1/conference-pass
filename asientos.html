@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Seleccionar asiento | Conference Pass</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/asientos.css">
+</head>
+
+<body class="seats-page">
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">C</span>
+            CONFERENCE<span>PASS</span>
+        </a>
+
+        <a href="index.html" class="nav-button">
+            ← Inicio
+        </a>
+
+    </header>
+
+    <main class="seats-container">
+
+        <section class="seats-heading">
+
+            <span class="section-tag">CONFERENCE PASS / RESERVACIÓN</span>
+
+            <h1>Elige tu <span>asiento.</span></h1>
+
+            <p>
+                Selecciona el lugar desde donde disfrutarás
+                nuestra conferencia.
+            </p>
+
+        </section>
+
+        <section class="seats-event-info">
+
+            <div>
+                <span>CONFERENCIA</span>
+                <strong>El Futuro es Ahora</strong>
+            </div>
+
+            <div>
+                <span>FECHA</span>
+                <strong>20 NOVIEMBRE 2026</strong>
+            </div>
+
+            <div>
+                <span>HORARIO</span>
+                <strong>10:00 AM</strong>
+            </div>
+
+            <div>
+                <span>AFORO</span>
+                <strong>100 ASIENTOS</strong>
+            </div>
+
+        </section>
+
+        <section class="seat-selection">
+
+            <div class="seat-instructions">
+                <h2>Mapa del auditorio</h2>
+                <p>Selecciona un asiento disponible.</p>
+            </div>
+
+            <div class="seat-legend">
+
+                <div>
+                    <span class="legend-seat available"></span>
+                    Disponible
+                </div>
+
+                <div>
+                    <span class="legend-seat selected"></span>
+                    Seleccionado
+                </div>
+
+                <div>
+                    <span class="legend-seat occupied"></span>
+                    Ocupado
+                </div>
+
+            </div>
+
+            <div class="auditorium">
+
+                <div class="stage">
+                    <span>ESCENARIO</span>
+                    <strong>CONFERENCE PASS</strong>
+                </div>
+
+                <div class="seat-map-wrapper">
+
+                    <div class="seat-map" id="seatMap">
+
+                        <!-- Los 100 asientos se generan con JavaScript -->
+
+                    </div>
+
+                </div>
+
+                <p class="stage-description">
+                    VISTA DESDE EL ESCENARIO
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="reservation-summary">
+
+            <div class="summary-info">
+
+                <span>ASIENTO SELECCIONADO</span>
+
+                <strong id="selectedSeat">
+                    Ninguno
+                </strong>
+
+                <p id="selectionMessage">
+                    Selecciona un lugar para continuar.
+                </p>
+
+            </div>
+
+            <button id="reserveButton" disabled>
+                Confirmar asiento →
+            </button>
+
+        </section>
+
+        <p class="seats-message" id="seatsMessage"></p>
+
+    </main>
+
+    <footer class="footer">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">C</span>
+            CONFERENCE<span>PASS</span>
+        </a>
+
+        <p>© 2026 Conference Pass. Proyecto académico.</p>
+
+    </footer>
+
+    <script type="module" src="/js/asientos.js"></script>
+
+</body>
+</html>

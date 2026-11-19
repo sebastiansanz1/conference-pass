@@ -1,0 +1,286 @@
+
+.registration-page {
+    min-height: 100vh;
+    background:
+        radial-gradient(ellipse at 15% 40%, rgba(121,101,255,.13), transparent 45%),
+        var(--background);
+}
+
+.registration-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 85px 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+}
+
+.registration-info h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(45px, 6vw, 75px);
+    line-height: 1.05;
+    letter-spacing: -4px;
+    margin: 25px 0;
+}
+
+.registration-info h1 span {
+    background: linear-gradient(90deg, #a18aff, #39baff);
+    color: transparent;
+    background-clip: text;
+}
+
+.registration-info > p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+    max-width: 440px;
+}
+
+.registration-event {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.registration-event div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.registration-event span {
+    color: var(--muted);
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.registration-event strong {
+    font-size: 13px;
+}
+
+.registration-card {
+    padding: 38px;
+    background: rgba(16,22,37,.95);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    box-shadow: 0 20px 70px rgba(0,0,0,.2);
+}
+
+.form-heading {
+    margin-bottom: 30px;
+}
+
+.form-heading h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 27px;
+    margin: 15px 0 8px;
+}
+
+.form-heading p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-group label {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px;
+    color: white;
+    background: #0b1020;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    outline: none;
+    font-family: inherit;
+    font-size: 13px;
+    transition: .3s;
+}
+
+.form-group input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(121,101,255,.12);
+}
+
+.form-group small {
+    color: var(--muted);
+    font-size: 10px;
+}
+
+.privacy-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.privacy-check input {
+    margin-top: 3px;
+    accent-color: var(--primary);
+}
+
+.privacy-check label {
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.register-button, .continue-button {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 7px;
+    background: linear-gradient(110deg, #7965ff, #587ffb);
+    color: white;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.register-button:hover, .continue-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(121,101,255,.25);
+}
+
+.register-button:disabled {
+    opacity: .6;
+    cursor: wait;
+    transform: none;
+}
+
+.form-message {
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #ff7777;
+}
+
+.success-panel {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.success-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(54,214,148,.12);
+    color: #36d694;
+    font-size: 32px;
+}
+
+.success-panel h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.success-panel > p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.registration-folio {
+    margin: 25px 0;
+    padding: 18px;
+    background: #0b1020;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.registration-folio span {
+    color: var(--muted);
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.registration-folio strong {
+    color: #a99cff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 19px;
+}
+
+.whatsapp-button {
+    display: block;
+    padding: 15px;
+    border-radius: 7px;
+    background: #168c57;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    transition: .3s;
+}
+
+.whatsapp-button:hover {
+    background: #20a66a;
+}
+
+.continue-button {
+    background: #242d43;
+}
+
+.continue-button:hover {
+    background: #303b56;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 850px) {
+    .registration-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 65px 7%;
+    }
+
+    .registration-info h1 {
+        font-size: 55px;
+    }
+
+    .registration-card {
+        padding: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .registration-info h1 {
+        font-size: 46px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .registration-card {
+        padding: 22px;
+    }
+}
